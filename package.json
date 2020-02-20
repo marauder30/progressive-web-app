@@ -4,9 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "prestart": "npm run webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --watch",
-    "start": "node server.js"
+    "start": "node server.js",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,9 @@
     "mongoose": "^5.5.15"
   },
   "devDependencies": {
+    "sw-precache-webpack-plugin": "^1.0.0",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-pwa-manifest": "^4.2.0"
   }
 }
