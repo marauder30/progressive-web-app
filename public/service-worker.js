@@ -3,9 +3,8 @@ console.log("Hello from your service-worker.js file!");
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
-    '/manifest.webmanifest',
-    '/public/style.css',
-    '/dist/bundle.js'
+    '/style.css',
+    '/index.js'
 ];
 
 const CACHE_NAME = "static-cache-v2";
